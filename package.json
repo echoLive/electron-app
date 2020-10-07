@@ -1,0 +1,32 @@
+{
+  "name": "electron-mksnapshot",
+  "version": "10.0.0",
+  "description": "Electron version of the mksnapshot binary",
+  "repository": "https://github.com/electron/mksnapshot",
+  "bin": {
+    "mksnapshot": "./mksnapshot.js"
+  },
+  "scripts": {
+    "install": "node ./download-mksnapshot.js",
+    "test": "mocha && standard"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@electron/get": "^1.12.2",
+    "extract-zip": "^2.0.0",
+    "fs-extra": "^7.0.1",
+    "temp": "^0.8.3"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.2",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "ignore": [
+      "test/fixtures"
+    ]
+  },
+  "engines": {
+    "node": ">=8.5.0"
+  }
+}
